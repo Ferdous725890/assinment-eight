@@ -2,12 +2,11 @@ import { NavLink, Outlet, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Heading from "./Heading";
 import { FaCartShopping, FaRegHeart } from "react-icons/fa6";
-// import { Outlet } from "react-router-dom";
-// import Gadget from "./Gadget";
-const Navbar = () => {
-    // document.getElementById("target-section").scrollIntoView({ behavior: "smooth" });
 
-    const location = useLocation(); // useLocation hook to get the current path
+const Navbar = () => {
+ 
+
+    const location = useLocation();
     const [cartCount, setCartCount] = useState(0);
     const [wishlistCount, setWishlistCount] = useState(0);
 
@@ -121,16 +120,7 @@ const Navbar = () => {
 
 
 
-
-
-
-
-
-
-
             <div>
-
-
 
 
                 <Outlet></Outlet>

@@ -10,7 +10,7 @@ const GadgetDetails = () => {
     const gadget = data.find(item => item.product_id === productId);
 
     const handleAddToCart = () => {
-        // Initialize cartItems if it's null
+      
         let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
         const isItemInCart = cartItems.some(item => item.product_id === gadget.product_id);
 
@@ -25,7 +25,7 @@ const GadgetDetails = () => {
     };
 
     const handleAddToWishlist = () => {
-        // Initialize wishlistItems if it's null
+       
         let wishlistItems = JSON.parse(localStorage.getItem("wishlistItems")) || [];
         const isItemInWishlist = wishlistItems.some(item => item.product_id === gadget.product_id);
 
